@@ -1,4 +1,4 @@
-# payment-gateway-integration-midtrans
+# [Example] Payment-Gateway-Integration-Midtrans
 
 Demo integrasi **payment gateway Midtrans (Snap)** buat testing. Projectnya terdiri dari dua aplikasi yang jalan terpisah:
 
@@ -108,7 +108,7 @@ ngrok http 3000
 
 Kalau webhook belum di-set, status order tetap ke-update karena backend juga polling Status API — cuma nggak instan.
 
-## Keamanan
+## Security
 
 - **`.env` jangan pernah di-commit.** Isinya server key yang bisa dipakai buat akses API Midtrans (bikin transaksi, lihat data). Kalau tidak sengaja ke-push, segera rotate/regenerate key di dashboard.
 - **File SQLite (`server/app.db*`) jangan di-commit.** Selain berubah terus tiap server jalan (mode WAL), isinya data pelanggan: nama, email, dan nomor telepon.
