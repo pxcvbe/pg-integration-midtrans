@@ -20,7 +20,7 @@ import {
 const app = new Hono()
 
 app.get('/', (c) => {
-  return c.text('This is will be my backend for mayars payment gateway\nBuilt with Hono')
+  return c.text('This is will be my backend for midtrans payment gateway\n\nBuilt with Hono')
 })
 
 // APP_URL = origin frontend; boleh lebih dari satu, pisahkan dengan koma
