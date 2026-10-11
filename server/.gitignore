@@ -1,2 +1,17 @@
 # deps
 node_modules/
+
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# database SQLite (berisi data pelanggan, jangan di-commit)
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+
+# logs
+logs/
+*.log
