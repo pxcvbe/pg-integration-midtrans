@@ -1,0 +1,19 @@
+{
+  "name": "payment-gateway-integration-midtrans",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+      "dev": "bun --hot src/index.ts",
+      "start": "NODE_ENV=production bun src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "preact": "^11.0.1"
+  }
+}
